@@ -1,0 +1,158 @@
+/* Estilos generales */
+.model-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.model-title {
+  text-align: center;
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.model-description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid de modelos */
+.model-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.model-card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-container {
+  flex: 1;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor especial para la imagen reducida */
+.reverse-image {
+  padding: 2rem; /* Espacio alrededor de la imagen reducida */
+}
+
+.model-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+/* Clase para la imagen reducida */
+.reduced-size {
+  max-width: 80%; /* Reduce el tamaño al 80% del contenedor */
+  max-height: 80%;
+}
+
+.model-card:hover .model-image {
+  transform: scale(1.03);
+}
+
+.model-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.model-content h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.model-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.model-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  background-color: #e8f5e9;
+  color: #2c5e1a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .model-card, .reverse {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    min-height: 200px;
+    padding: 1rem;
+  }
+  
+  .model-title {
+    font-size: 2rem;
+  }
+  
+  .reduced-size {
+    max-width: 90%;
+  }
+  
+  .reverse-image {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .model-container {
+    padding: 1rem;
+  }
+  
+  .model-title {
+    font-size: 1.8rem;
+  }
+  
+  .model-description {
+    font-size: 1rem;
+  }
+}

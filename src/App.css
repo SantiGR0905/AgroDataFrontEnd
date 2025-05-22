@@ -1,0 +1,15 @@
+nav {
+  background: #4CAF50;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.powerbi-iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
