@@ -10,13 +10,13 @@ const Dashboard = () => {
       </header>
       
       <div className="powerbi-container">
-        <iframe 
-          title="Reporte Agrícola Power BI" 
-          src="https://app.powerbi.com/reportEmbed?reportId=3f4889ad-8c07-45a7-8adb-5523d4ad6389&autoAuth=true&ctid=07da67a0-1f43-4e8c-977f-5f88b6470ee6" 
-          frameBorder="0" 
-          allowFullScreen={true}
-          className="powerbi-iframe"
-        ></iframe>
+        <iframe title="AgroDataDW" 
+          width="600" 
+          height="373.5" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiMzZlNWZmZmMtMzFmNi00MTRiLWEzNDMtZGNjZjc1NmE2MDhlIiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" 
+          frameBorder="0" allowFullScreen="true"
+          className="powerbi-iframe">
+        </iframe>
       </div>
     </div>
   );
